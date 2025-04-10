@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modrinth App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <div class="logo">
+        <img src="https://modrinth.com/assets/logo.svg" alt="Modrinth Logo">
+      </div>
+      <nav>
+        <button id="homeButton">Home</button>
+        <button id="modsButton">Mods</button>
+        <button id="settingsButton">Settings</button>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <!-- Iframe that will load different content dynamically -->
+      <iframe id="contentFrame" src="index.html" width="100%" height="100%" style="border:none;"></iframe>
+    </main>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
